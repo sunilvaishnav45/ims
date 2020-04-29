@@ -24,10 +24,10 @@ export class Sidebar extends Component {
                 <Link to="/brand">
                     <a style={centerText} class="list-group-item ">Brand</a>
                 </Link>
-                <a style={centerText} class="list-group-item ">Overview</a>
-                <a style={centerText} class="list-group-item ">Events</a>
-                <a style={centerText} class="list-group-item ">Profile</a>
-                <a style={centerText} class="list-group-item ">Status</a>
+                <a href="#" style={centerText} class="list-group-item ">Overview</a>
+                <a href="#" style={centerText} class="list-group-item ">Events</a>
+                <a href="#" style={centerText} class="list-group-item ">Profile</a>
+                <a href="#" style={centerText} class="list-group-item ">Status</a>
             </div>
         )
     }

@@ -5,7 +5,7 @@ export class Topbar extends Component {
         return (
             <div>
                 <nav class="navbar navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#">Inventory Management System</a>
+                    <a href="#" class="navbar-brand" href="#">Inventory Management System</a>
                 </nav>
             </div>
         )
