@@ -1,36 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Sidebar from './Components/Sidebar/Sidebar';
 import Product from './Components/Product/Product';
 import Topbar from './Components/Topbar/Topbar';
-import Brand from './Components/Brand/Brand';
+import Brand from './Components/Brand/Brand.jsx';
 import Dashboard from './Components/Dashboard/Dashboard';
+import PrivateRoute from './Router/PrivateRoute';
+import Login from './Components/Login/Login';
+import PublicRoute from './Router/PublicRoute';
+import LoginService from './Services/LoginService';
+import UrlUtils from './Utils/UrlUtils';
+
+const loginService = new LoginService();
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Topbar />
-        {/*  <Sidebar />
-      <Product /> */}
-        {/* <div className="container-fluid"> */}
-        <div className="row">
-          <div className="col-md-2" style={{paddingRight:0,paddingLeft:0}}>
-            <Sidebar />
+    <div className="container-fluid">
+      <div className="row">
+        <Router>
+          {loginService.isUserLoggedIn() ?
+            <React.Fragment>
+              <div className="col-12 bg-dark">
+                <Topbar />
+              </div>
+              <div className="col-md-2 bg-dark p-0">
+                <Sidebar />
+              </div>
+            </React.Fragment> : null}
+          <div className="col-md-10">
+            <Switch>
+              <PrivateRoute restricted={false} path="/" exact component={Dashboard} />
+              <PrivateRoute restricted={false} path="/product" exact component={Product} />
+              <PrivateRoute restricted={false} path="/brand" exact component={Brand} />
+              <PublicRoute restricted={true} component={Login} path="/login" exact />
+            </Switch>
           </div>
-          <div className="col-md-10" style={{paddingRight:0,paddingLeft:0}}>
-            <div>
-              <Switch>
-                <Route path="/" exact component={Dashboard} />
-                <Route path="/product" exact component={Product} />
-                <Route path="/brand" exact component={Brand} />
-              </Switch>
-            </div>
-          </div>
-        </div>
-      </Router>
+        </Router>
+      </div>
     </div>
   );
 }

@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/ims/static/css/main.b7f5d440.chunk.css",
-    "main.js": "/ims/static/js/main.80abbfa2.chunk.js",
-    "main.js.map": "/ims/static/js/main.80abbfa2.chunk.js.map",
-    "runtime-main.js": "/ims/static/js/runtime-main.e024e3fc.js",
-    "runtime-main.js.map": "/ims/static/js/runtime-main.e024e3fc.js.map",
-    "static/css/2.69121389.chunk.css": "/ims/static/css/2.69121389.chunk.css",
-    "static/js/2.8b96f5f0.chunk.js": "/ims/static/js/2.8b96f5f0.chunk.js",
-    "static/js/2.8b96f5f0.chunk.js.map": "/ims/static/js/2.8b96f5f0.chunk.js.map",
-    "index.html": "/ims/index.html",
-    "precache-manifest.9f8fb5afe54b9fcfe52062fbc8da88e0.js": "/ims/precache-manifest.9f8fb5afe54b9fcfe52062fbc8da88e0.js",
-    "service-worker.js": "/ims/service-worker.js",
-    "static/css/2.69121389.chunk.css.map": "/ims/static/css/2.69121389.chunk.css.map",
-    "static/css/main.b7f5d440.chunk.css.map": "/ims/static/css/main.b7f5d440.chunk.css.map",
-    "static/js/2.8b96f5f0.chunk.js.LICENSE.txt": "/ims/static/js/2.8b96f5f0.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/ims/static/media/logo.5d5d9eef.svg"
+    "main.css": "/ims-web/static/css/main.1de76bb8.chunk.css",
+    "main.js": "/ims-web/static/js/main.372c8446.chunk.js",
+    "main.js.map": "/ims-web/static/js/main.372c8446.chunk.js.map",
+    "runtime-main.js": "/ims-web/static/js/runtime-main.944e4a88.js",
+    "runtime-main.js.map": "/ims-web/static/js/runtime-main.944e4a88.js.map",
+    "static/css/2.69121389.chunk.css": "/ims-web/static/css/2.69121389.chunk.css",
+    "static/js/2.d0c00bac.chunk.js": "/ims-web/static/js/2.d0c00bac.chunk.js",
+    "static/js/2.d0c00bac.chunk.js.map": "/ims-web/static/js/2.d0c00bac.chunk.js.map",
+    "index.html": "/ims-web/index.html",
+    "precache-manifest.769d2e410ad539f6f37725dc93c3b068.js": "/ims-web/precache-manifest.769d2e410ad539f6f37725dc93c3b068.js",
+    "service-worker.js": "/ims-web/service-worker.js",
+    "static/css/2.69121389.chunk.css.map": "/ims-web/static/css/2.69121389.chunk.css.map",
+    "static/css/main.1de76bb8.chunk.css.map": "/ims-web/static/css/main.1de76bb8.chunk.css.map",
+    "static/js/2.d0c00bac.chunk.js.LICENSE.txt": "/ims-web/static/js/2.d0c00bac.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e024e3fc.js",
+    "static/js/runtime-main.944e4a88.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.8b96f5f0.chunk.js",
-    "static/css/main.b7f5d440.chunk.css",
-    "static/js/main.80abbfa2.chunk.js"
+    "static/js/2.d0c00bac.chunk.js",
+    "static/css/main.1de76bb8.chunk.css",
+    "static/js/main.372c8446.chunk.js"
   ]
 }

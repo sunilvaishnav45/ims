@@ -1,33 +1,46 @@
 import React,{Component} from 'react'
 import './Sidebar.css';
 import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faProjectDiagram,faUser, faDigitalTachograph, faEnvelopeOpenText,faMeteor,faDatabase} from '@fortawesome/free-solid-svg-icons';
+import UrlUtils from '../../Utils/UrlUtils';
+
 
 export class Sidebar extends Component {
-    render() {
-        const sideBar = {
-            width: '100%'
-        }
-        const centerText = {
-            textAlign: 'center',
-            color: 'white',
-            borderRadius: '0'   
-        }
 
+    constructor(){
+        super();
+    }
+    render() {
         return (
-            <div  className="list-group" style={sideBar}>
-                <Link to="/">
-                    <div style={centerText} className="list-group-item ">Dashboard</div>
+            <div  className="list-group w-100 h-100">
+                <Link to="/?active=dashboard">
+                    <div className="list-group-item">
+                        <span className="mr-1"><FontAwesomeIcon icon={faMeteor} /></span> Dashboard
+                    </div>
                 </Link>
-                <Link to="/product">
-                    <div style={centerText} className="list-group-item ">Products</div>
+                <Link to="/product?active=product">
+                    <div className="list-group-item">
+                        <span className="mr-1"><FontAwesomeIcon icon={faProjectDiagram} /></span> Product
+                    </div>
                 </Link>
-                <Link to="/brand">
-                    <div style={centerText} className="list-group-item ">Brand</div>
+                <Link to="/brand?active=brand">
+                    <div className="list-group-item">
+                        <span className="mr-1"><FontAwesomeIcon icon={faDatabase} /></span> Brand
+                    </div>
                 </Link>
-                <div style={centerText} className="list-group-item ">Overview</div>
-                <div style={centerText} className="list-group-item ">Events</div>
-                <div style={centerText} className="list-group-item ">Profile</div>
-                <div style={centerText} className="list-group-item ">Status</div>
+                <div className="list-group-item">
+                    <span className="mr-1"><FontAwesomeIcon icon={faDatabase} /></span> Overview
+                </div>
+                <div className="list-group-item">
+                    <span className="mr-1"><FontAwesomeIcon icon={faEnvelopeOpenText} /></span> Event
+                </div>
+                <div className="list-group-item">
+                    <span className="mr-1"><FontAwesomeIcon icon={faUser} /></span> Profile
+                </div>
+                <div className="list-group-item">
+                    <span className="mr-1"><FontAwesomeIcon icon={faDigitalTachograph} /></span> Status
+                </div>
             </div>
         )
     }

@@ -1,13 +1,18 @@
 import React,{Component} from 'react'
 
 export class Topbar extends Component {
+
+    constructor(){
+        super()
+    }
+
     render() {
         return (
-            <div>
-                <nav className="navbar navbar-dark bg-dark">
-                    <a className="navbar-brand" href="#">Inventory Management System</a>
+            <React.Fragment>
+                <nav className="navbar navbar-dark  bg-dark">
+                    <a className="navbar-brand" href="/">IMS</a>
                 </nav>
-            </div>
+            </React.Fragment>
         )
     }
 }
