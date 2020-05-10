@@ -11,8 +11,8 @@ class LogoutService extends React.Component {
         super()
         this.loginService = new LoginService();
         this.cookies = new Cookies();
-        this.REACT_APP_ROOT_CONTEXT = process.env.REACT_APP_ROOT_CONTEXT;
-        this.loginPageUrl = this.REACT_APP_ROOT_CONTEXT+"/#/login"
+        this.REACT_APP_ROOT_URL = process.env.REACT_APP_ROOT_URL;
+        this.loginPageUrl = this.REACT_APP_ROOT_URL+"#/login"
     }
 
     logout = () => {
