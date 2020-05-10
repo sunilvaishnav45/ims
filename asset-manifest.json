@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "//ims/static/css/main.d4f7922c.chunk.css",
-    "main.js": "//ims/static/js/main.76969737.chunk.js",
-    "main.js.map": "//ims/static/js/main.76969737.chunk.js.map",
-    "runtime-main.js": "//ims/static/js/runtime-main.83be06a1.js",
-    "runtime-main.js.map": "//ims/static/js/runtime-main.83be06a1.js.map",
-    "static/css/2.69121389.chunk.css": "//ims/static/css/2.69121389.chunk.css",
-    "static/js/2.2957c89b.chunk.js": "//ims/static/js/2.2957c89b.chunk.js",
-    "static/js/2.2957c89b.chunk.js.map": "//ims/static/js/2.2957c89b.chunk.js.map",
-    "index.html": "//ims/index.html",
-    "precache-manifest.0e5bc1a1263a152a414cda66b4e36418.js": "//ims/precache-manifest.0e5bc1a1263a152a414cda66b4e36418.js",
-    "service-worker.js": "//ims/service-worker.js",
-    "static/css/2.69121389.chunk.css.map": "//ims/static/css/2.69121389.chunk.css.map",
-    "static/css/main.d4f7922c.chunk.css.map": "//ims/static/css/main.d4f7922c.chunk.css.map",
-    "static/js/2.2957c89b.chunk.js.LICENSE.txt": "//ims/static/js/2.2957c89b.chunk.js.LICENSE.txt"
+    "main.css": "/ims-web/static/css/main.d4f7922c.chunk.css",
+    "main.js": "/ims-web/static/js/main.56ccbd35.chunk.js",
+    "main.js.map": "/ims-web/static/js/main.56ccbd35.chunk.js.map",
+    "runtime-main.js": "/ims-web/static/js/runtime-main.944e4a88.js",
+    "runtime-main.js.map": "/ims-web/static/js/runtime-main.944e4a88.js.map",
+    "static/css/2.69121389.chunk.css": "/ims-web/static/css/2.69121389.chunk.css",
+    "static/js/2.2957c89b.chunk.js": "/ims-web/static/js/2.2957c89b.chunk.js",
+    "static/js/2.2957c89b.chunk.js.map": "/ims-web/static/js/2.2957c89b.chunk.js.map",
+    "index.html": "/ims-web/index.html",
+    "precache-manifest.6300f22d9ef026d7736a5fc3f45c9d84.js": "/ims-web/precache-manifest.6300f22d9ef026d7736a5fc3f45c9d84.js",
+    "service-worker.js": "/ims-web/service-worker.js",
+    "static/css/2.69121389.chunk.css.map": "/ims-web/static/css/2.69121389.chunk.css.map",
+    "static/css/main.d4f7922c.chunk.css.map": "/ims-web/static/css/main.d4f7922c.chunk.css.map",
+    "static/js/2.2957c89b.chunk.js.LICENSE.txt": "/ims-web/static/js/2.2957c89b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.83be06a1.js",
+    "static/js/runtime-main.944e4a88.js",
     "static/css/2.69121389.chunk.css",
     "static/js/2.2957c89b.chunk.js",
     "static/css/main.d4f7922c.chunk.css",
-    "static/js/main.76969737.chunk.js"
+    "static/js/main.56ccbd35.chunk.js"
   ]
 }
