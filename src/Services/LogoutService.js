@@ -17,12 +17,10 @@ class LogoutService extends React.Component {
         this.removeToken();
         let loginURL = this.REACT_APP_ROOT_URL+"#/login";
         window.location.href = loginURL;
-        alert(loginURL)
         window.location.reload();
     }
 
     removeToken = () => {
-        alert(this.loginService.getLoginTokenKey())
         this.cookies.remove(this.loginService.getLoginTokenKey(), { path: this.REACT_APP_ROOT_CONTEXT });
     }
 }
