@@ -9,6 +9,7 @@ class LoginService extends React.Component {
         super();
         this.cookies = new Cookies();
         this.token_cookie_name = "IMS_LOGIN_TOKEN";
+        this.REACT_APP_ROOT_CONTEXT = process.env.REACT_APP_ROOT_CONTEXT;
     }
 
     getLoginTokenKey = () => {
@@ -41,7 +42,7 @@ class LoginService extends React.Component {
 
     onLoginSuccess = (token) => {
         this.cookies.set(this.token_cookie_name, token, { path: '/' });
-        window.location.href = "/";
+        window.location.href = "/"+this.REACT_APP_ROOT_CONTEXT;
     }
 
     onLoginFailed = (error) => {
