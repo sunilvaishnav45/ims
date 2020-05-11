@@ -13,7 +13,7 @@ class LogoutService extends React.Component {
 
     logout = () => {
         this.removeToken();
-        window.location.href = "/#/login";
+        window.location.href = "/login";
         window.location.reload();
     }
 
