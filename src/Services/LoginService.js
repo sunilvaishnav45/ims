@@ -41,7 +41,7 @@ class LoginService extends React.Component {
     }
 
     onLoginSuccess = (token) => {
-        this.cookies.set(this.token_cookie_name, token, { path: '/' });
+        this.cookies.set(this.token_cookie_name, token, { path: this.REACT_APP_ROOT_CONTEXT });
         window.location.href = "/"+this.REACT_APP_ROOT_CONTEXT;
     }
 
