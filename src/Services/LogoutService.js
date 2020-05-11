@@ -21,6 +21,7 @@ class LogoutService extends React.Component {
     }
 
     removeToken = () => {
+        alert(this.loginService.getLoginTokenKey())
         this.cookies.remove(this.loginService.getLoginTokenKey());
     }
 }
