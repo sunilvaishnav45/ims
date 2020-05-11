@@ -10,6 +10,7 @@ class LogoutService extends React.Component {
         this.loginService = new LoginService();
         this.cookies = new Cookies();
         this.REACT_APP_ROOT_URL = process.env.REACT_APP_ROOT_URL;
+        this.REACT_APP_ROOT_CONTEXT = process.env.REACT_APP_ROOT_CONTEXT;
     }
 
     logout = () => {
@@ -22,7 +23,7 @@ class LogoutService extends React.Component {
 
     removeToken = () => {
         alert(this.loginService.getLoginTokenKey())
-        this.cookies.remove(this.loginService.getLoginTokenKey());
+        this.cookies.remove(this.loginService.getLoginTokenKey(), { path: this.REACT_APP_ROOT_CONTEXT });
     }
 }
 
